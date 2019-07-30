@@ -1,7 +1,8 @@
 package app;
 
 import entities.*;
-import exceptions.*;
+import exceptions.InvalidCommandException;
+import exceptions.InvalidInputException;
 import repositories.*;
 import services.CustomerService;
 import services.EmployeeService;
@@ -11,18 +12,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
-import static constants.Constants.*;
+import static constants.Constants.NUMBER_REGEX;
 
 public class Engine implements Runnable {
     private Connection connection;
