@@ -2,7 +2,6 @@ package entities;
 
 public class Customer extends Person {
 
-
     public Customer(){}
 
     public Customer(String username, String password, String firstName,
