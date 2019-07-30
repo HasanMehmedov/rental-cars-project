@@ -17,6 +17,6 @@ public class Application {
     }
 
     private static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(CONNECTION_STRING, "root", "7351");
+        return DriverManager.getConnection(CONNECTION_STRING, "root", "");
     }
 }
