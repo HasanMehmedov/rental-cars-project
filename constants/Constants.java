@@ -15,8 +15,9 @@ public class Constants {
     public static final String CREDIT_CARD_REGEX = "^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|" +
                                                    "6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}" +
                                                    "|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\\d{3})\\d{11})$";
-    public static final String CAR_BRAND_REGEX = "^[A-Z][a-z][^#&<>\\\"~;$^%{}?]{1,20}$";
-    public static final String CAR_MODEL_REGEX = "^[A-Z][A-Za-z0-9][^#&<>\\\"~;$^%{}?]{1,20}$";
+    public static final String CAR_BRAND_REGEX = "^[A-Z][A-Za-z][^#&<>\\\"*~;$^%{}?]{0,20}$";
+    public static final String CAR_MODEL_REGEX = "^[A-Z][A-Za-z0-9][^#&<>\\\"*~;$^%{}?]{0,20}$";
     public static final String FLOATING_POINT_NUMBER_REGEX = "^\\d+(\\.\\d+)*$";
     public static final double MIN_SALARY = 400;
+    public static final double MANAGER_SALARY = 4000;
 }
