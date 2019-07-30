@@ -2,9 +2,6 @@ package app;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class Application {
     private static final String CONNECTION_STRING = "jdbc:mysql://localhost:3306/cars_db?useTimezone=true&serverTimezone=UTC";
