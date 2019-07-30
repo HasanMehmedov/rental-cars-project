@@ -40,6 +40,7 @@ public class CustomerService {
         this.addressRepository = new AddressRepository(this.connection);
         this.carRepository = new CarRepository(this.connection);
         this.couponRepository = new CouponRepository(this.connection);
+        this.routeRepository = new RouteRepository(this.connection);
     }
 
     public void customerCommands() throws IOException, SQLException {
